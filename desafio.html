@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastro de Receita/Despesa</title>
+    </head>
+    <body>
+        <h1>Cadastro de Receita/Despesa</h1>
+           <form action="Salvar"></form> 
+            <div>
+                <div>
+                    <label for="descricao"><b>Descrição</b></label><br>
+                    <input type="text" name="descricaoo">
+                </div>
+                <div>
+                    <label for="observacao"><b>Observação</b></label><br>
+                    <input type="text" name="observação">
+                </div>
+                <div>
+                    <label><b>Tipo</b></label>
+                        <div>
+                            <span>Receita</span>
+                            <input id="tipo-receita" name="tipo" type="radio">
+                            <span>Despesa</span>
+                            <input id="tipo-despesa" name="tipo" type="radio">
+                        </div>
+                <div>
+                    <label for="valor"><b>Valor</b></label>
+                    <div>
+                        <input type="number" name="valor" id="valor">
+                    </div>
+                </div>
+                    <label for="consolidado"><b>Consolidado?</b></label>
+                    <input 
+                    type="checkbox" 
+                    name="consolidado" 
+                    id="consolidado"><br>
+                </div>
+                <div>
+                    <label for="conta"><b>Conta Associada</b></label><br>
+                    <select name="conta" id="id">
+                        <option value="">Nenhum</option>
+                        <option value="bb">Conta Corrente BB</option>
+                        <option value="nu">Conta Corrente NuBank</option>
+                        <option value="it">Conta Corrente Itaú</option>
+                    </select>
+                <div>
+            </div>
+            <button>Salvar</button>
+            <button>Cancelar</button>
+        </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Tag Formulário</title>
+        </head>
+    <body>
+        <h1>Tags Formulário</h1>
+        <form action="Salvar">
+            <input 
+                name="Nome"
+                type="text"
+                placeholder="Informe seu nome...">
+            <input 
+                name="email"
+                type="email"
+                placeholder="Informe seu e-mail...">
+            <input 
+                name="senha"
+                type="password"
+                placeholder="Informe sua senha..."> <!--Tipo senha(não mostrará o que está sendo escrito)-->
+            <input 
+                name="dependentes"
+                type="number" 
+                min="0"
+                max="10"
+                placeholder="Informe a qtd de dependentes..."> <!--Tipo com máximo e mínimo para quantitativo-->
+            <input 
+                name="telefone"
+                type="tel" 
+                placeholder="Informe o telefone...">
+            <div>
+                <span>Mora no Brasil?</span>
+                <input 
+                    name="moradia"
+                    type="checkbox">
+            </div> <!--Utilizando divisão e caixinha para marcação(checkbox)-->
+            <div>
+                <label for="exterior">Mora no Exterior?</label>
+                <input 
+                    id="exterior"
+                    name="exterior"
+                    type="checkbox">
+            </div>
+            <div>
+                <h3>Qual é o seu salário mensal?</h3>
+                <div>
+                    <label for="sal1000">Até 1000</label>
+                    <input name="salario" type="radio" name="salario" id="sal1000"> <!--Caso seja utilizado o mesmo name, quando se tem várias opções-->
+                </div>
+                <div>
+                    <label for="sal2000">Até 2000</label>
+                    <input name="salario" type="radio" name="salario" id="sal2000"> <!--Id é único em casa de múltiplas opções-->
+                </div>
+                <div>
+                    <label for="sal6000">Até 6000</label>
+                    <input name="salario" type="radio" name="salario" id="sal6000">
+                </div>
+                <div>
+                    <label for="sal6001">Mais de 6001</label>
+                    <input name="salario" type="radio" name="salario" id="sal6001">
+                </div>
+            </div>
+            <button>Salvar</button>
+        </form>
+    </body>
+</html>
