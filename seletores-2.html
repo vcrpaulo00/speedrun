@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Seletores #2</title>
+        <style>
+            button{
+                background-color: #0808e7;
+                color: white;
+                padding: 8px 10px;
+                border-radius: 5px;
+                border: 0px;
+                cursor: pointer;
+            } 
+            button:hover{
+                background-color: #07076b;
+                padding: 12px 20px;
+            }
+            span:nth-child(2){
+                background-color: purple;
+                color: white;
+                padding: 8px 15px;;
+            }
+            div > span > p#texto-importante{
+                background-color: green;
+            } 
+        </style> <!--pseudo classe são acessadas a partir de :, :: é pseudo elemento-->
+    <!--seletor p.texto-importante, seria para criar uma classe-->
+    </head>
+    <body>
+        <h1>Seletores #2</h1>
+        <div>
+            <div>
+                <span>Olá, mundo</span>
+                <span>Hello, world</span>
+            </div>
+            <div>
+                <span>
+                    <h3>Frases de Viktor Frankl</h3>
+                    <p id="texto-importante">Quando a circunstância é boa, devemos desfrutá-la; quando não é favorável devemos transformá-la e quando não pode ser transformada, devemos transformar a nós mesmos.</p>
+                </span>
+            </div>
+            <div>
+                <button>Salvar</button>
+            </div>
+        </div>
+
+        <a href="./exercicio.html">Voltar</a>
+    </body>
+</html>
+
+<!--
+Seletores importante, nome da tag (div ou span) (especificidade menor, 1)
+Seletores de ID, começa com # (prioridade maior, 100)
+Seletores de Classe, começa com . (prioridade média, 10)
+Seletor de Propriedade, fica entra colchete
