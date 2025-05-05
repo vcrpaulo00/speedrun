@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Seletores #1</title>
+        <style>
+            div{
+                color: black;
+            }
+            .destaque{
+                background-color: brown;
+            }
+            [chic]{
+                letter-spacing: 10px;
+            }
+            #primeiro-texto{
+                font-size: xx-large;
+                font-weight: 700;
+            } 
+            button{
+                background-color: #4949e6;
+                color: white;
+                padding: 8px 10px;
+                border-radius: 5px;
+                border: 0px;
+                cursor: pointer;
+            }
+        </style> <!--div seria geral na aplicação, mas a #...
+        seria de alta especificidade-->
+    </head>
+    <body>
+        <h1>Seletores #1</h1>
+
+        <div id="primeiro-texto">Texto #1</div>
+        <div class="destaque">Texto #2</div>
+        <div>Texto #3</div>
+        <div class="destaque">Texto #4</div>
+        <div chic>Texto #5</div>
+
+        <div>
+            <button>Salvar</button>
+        </div>
+
+        <a href="./exercicio.html">Voltar</a>
+    </body>
+</html>
