@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Desafio CSS</title>
+        <style>
+            html {
+                background-color: black;
+                color: white;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .visited {
+                color: fuchsia;
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 10px;
+            }
+            .produto-info {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                padding: 15px;
+                justify-content: space-between;
+            }
+            .produto-item {
+                display: flex;
+                flex-direction: column;
+                width: 280px;
+                height: 400px;
+                background-color: #333;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+            .produto-info > h2 { /*Selecionou um h2 dentro de uma classe, assim zerando somente essa margem*/
+                margin: 0px;
+                font-size: 18px;
+                font-weight: 400;
+            }
+            .produto-info > p{
+                margin: 0;
+                font-size: 13px;
+                font-weight: 400;
+                color: #bbb;
+                text-align: justify;
+            }
+            .estrela {
+                width: 16px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Desafio CSS</h1>
+        <div class="produto-item">
+            <img 
+                src="https://img.freepik.com/fotos-gratis/arranjo-de-colecao-estacionario-moderno_23-2149309643.jpg?semt=ais_hybrid&w=740" 
+                alt="Imagem do Produto"><!--Alternativa, caso a imagem não apareça e tbm, ajuda em caso de acessibilidade-->
+            <div class="produto-info">
+                <h2>Kit Atenado 2024</h2>
+                <p>Lorem ipsum dolor sit amet. Vel rerum numquam quo aliquam quae ut sint voluptatem qui pariatur quia sit iusto tempora sed enim placeat cum quia quia. Ut sunt sunt vel repudiandae praesentium aut perspiciatis odit.</p>
+                <div>
+                    <img 
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Full_Star_Yellow.svg/2048px-Full_Star_Yellow.svg.png" 
+                        alt="Estrela de Review"
+                        class="estrela">
+                    <img 
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Full_Star_Yellow.svg/2048px-Full_Star_Yellow.svg.png" 
+                        alt="Estrela de Review"
+                        class="estrela">
+                    <img 
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Full_Star_Yellow.svg/2048px-Full_Star_Yellow.svg.png" 
+                        alt="Estrela de Review"
+                        class="estrela">
+                    <img 
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Full_Star_Yellow.svg/2048px-Full_Star_Yellow.svg.png" 
+                        alt="Estrela de Review"
+                        class="estrela">
+                    <img 
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Full_Star_Yellow.svg/2048px-Full_Star_Yellow.svg.png" 
+                        alt="Estrela de Review"
+                        class="estrela">
+                </div>
+            </div>
+        </div>
+        
+        <div>
+        <a class="visited" href="exercicio.html">Voltar</a>
+        </div>
+    </body>
+</html>
