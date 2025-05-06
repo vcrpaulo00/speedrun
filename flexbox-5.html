@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Flex#5</title>
+        <style>
+            .flexbox{
+                display: flex;
+                column-gap: 5px;
+                padding: 5px;
+            }
+            .externo{
+                height: 400px;
+                background-color: crimson;
+                border: 2px solid #000;
+
+            }
+            .interno{
+                height: 75px;
+                background-color: deepskyblue;
+                border: 2px solid #000;
+            }
+            .crescer-1{
+                flex-grow: 3;
+            } 
+            .crescer-2{
+                flex-grow: 6;
+            }
+            .crescer-3{
+                flex-grow: 3;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Flexbox#5</h1>
+
+        <span>Flex Conteiner</span>
+
+        <div class="externo flexbox">
+            <div class="interno crescer-1">1</div>
+            <div class="interno crescer-2">2</div>
+            <div class="interno crescer-3">3</div>
+        </div>     
+        
+        <a href="./exercicio.html">Voltar</a>
+    </body>
+</html>
